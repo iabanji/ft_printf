@@ -11,7 +11,7 @@
 # **************************************************************************** #
 
 NAME = libftprintf.a
-FLAGS = -Wall -Werror -Wextra
+FLAGS = -Wall -Wextra -Werror
 ODIR = bin/
 OBJ = $(SRC:.c=.o)
 EXT = libft.h
@@ -51,6 +51,7 @@ SRC += ft_toupper.c
 SRC += ft_tolower.c
 SRC += ft_atoi.c
 SRC += ft_itoa.c
+SRC += ft_itoa_u.c
 SRC += ft_bzero.c
 SRC += ft_isalnum.c
 SRC += ft_putchar.c

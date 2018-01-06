@@ -37,7 +37,7 @@ int main()
 	int	uu = ft_printf("%10.5S|\n", NULL);
 	int u = printf("%10.5S|\n", NULL);
 	printf("%d   %d\n", uu, u);
-	ft_printf("{%03c}\n", 0);
-	printf("{%03c}\n", 0);
+	ft_printf("%lu\n", 18446744073709551491);
+	printf("%lu\n", 18446744073709551491);
 	return (0);
 }

@@ -51,7 +51,7 @@ void	print_u(va_list ap)
 	else if (g_data.hh != 0)
 		str = ft_itoa_base_u((unsigned char)tmp, 10);
 	else if (g_data.l != 0)
-		str = ft_itoa_base_u((unsigned long int)tmp, 10);
+		str = ft_itoa_u((unsigned long int)tmp);
 	else if (g_data.ll != 0)
 		str = ft_itoa_base_u((unsigned long long int)tmp, 10);
 	else if (g_data.z != 0)
