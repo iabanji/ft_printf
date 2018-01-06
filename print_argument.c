@@ -47,19 +47,19 @@ void	print_u(va_list ap)
 		g_data.l = 1;
 	tmp = va_arg(ap, void*);
 	if (g_data.h != 0)
-		str = ft_itoa_base_u((unsigned short int)tmp, 10);
+		str = ft_itoa_u((unsigned short int)tmp);
 	else if (g_data.hh != 0)
-		str = ft_itoa_base_u((unsigned char)tmp, 10);
+		str = ft_itoa_u((unsigned char)tmp);
 	else if (g_data.l != 0)
 		str = ft_itoa_u((unsigned long int)tmp);
 	else if (g_data.ll != 0)
-		str = ft_itoa_base_u((unsigned long long int)tmp, 10);
+		str = ft_itoa_u((unsigned long long int)tmp);
 	else if (g_data.z != 0)
-		str = ft_itoa_base_u((size_t)tmp, 10);
+		str = ft_itoa_u((size_t)tmp);
 	else if (g_data.j != 0)
-		str = ft_itoa_base_u((uintmax_t)tmp, 10);
+		str = ft_itoa_u((uintmax_t)tmp);
 	else
-		str = ft_itoa_base_u((unsigned int)tmp, 10);
+		str = ft_itoa_u((unsigned int)tmp);
 	print_cifer(str);
 	free(str);
 }
