@@ -6,7 +6,7 @@
 /*   By: giabanji <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/03 18:09:51 by giabanji          #+#    #+#             */
-/*   Updated: 2017/12/28 16:05:04 by giabanji         ###   ########.fr       */
+/*   Updated: 2018/01/11 19:36:10 by giabanji         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,12 +25,12 @@ static unsigned long long int		count_chars(unsigned long long int a)
 	return (i);
 }
 
-char					*ft_itoa_u(unsigned long long int n)
+char								*ft_itoa_u(unsigned long long int n)
 {
 	unsigned long long int	m;
 	unsigned long long int	i;
 	unsigned long long int	num;
-	char			*str;
+	char					*str;
 
 	m = n;
 	i = count_chars(m);

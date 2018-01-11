@@ -34,10 +34,14 @@ int main()
 	int e = printf("%20.6s|\n", "I have one dream!");
 	printf("%d   %d\n",ee, e);
 	setlocale (LC_ALL, "");
-	int	uu = ft_printf("%10.5S|\n", NULL);
-	int u = printf("%10.5S|\n", NULL);
+	int	uu = ft_printf("%40S|\n", L"ŸM-^Dÿ≠ŸM-^E ÿÆŸM-^Fÿ...");
+	int u = printf("%40S|\n", L"ŸM-^Dÿ≠ŸM-^E ÿÆŸM-^Fÿ...");
 	printf("%d   %d\n", uu, u);
 	ft_printf("%lu\n", 18446744073709551491);
 	printf("%lu\n", 18446744073709551491);
+	ft_printf("{%5p}\n", 0);
+	printf("{%5p}\n", 0);
+	ft_printf("%15.4d\n", -42);
+	printf("%15.4d\n", -42);
 	return (0);
 }
